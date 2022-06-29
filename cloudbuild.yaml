@@ -1,9 +1,5 @@
-
 steps:
-- name: 'asia.gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', 'asia-south1-docker.pkg.dev/321711/my-v-docker-repo/myimage', '.' ]
-
-- name: 'asia.gcr.io/cloud-builders/docker'
-  args: ['push', 'asia-south1-docker.pkg.dev/321711/my-v-docker-repo/myimage']
-options:
-  logging: NONE
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'build', '-t', 'us-west2-docker.pkg.dev/sailor-321711/quickstart-docker-repo/quickstart-image:tag1', '.' ]
+images:
+- 'us-west2-docker.pkg.dev/sailor-321711/quickstart-docker-repo/quickstart-image:tag1'
