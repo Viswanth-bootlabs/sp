@@ -1,8 +1,8 @@
 steps:
-- name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', 'gcr.io/sailor-321711/my-v-docker:v1', '.' ]
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'south1-docker.pkg.dev/321711/my-v-docker:v1']
+- name: 'asia.gcr.io/cloud-builders/docker'
+  args: [ 'build', '-t', 'aisa.gcr.io/sailor-321711/my-v-docker:v1', '.' ]
+- name: 'asia.gcr.io/cloud-builders/docker'
+  args: ['push', 'aisa.gcr.io/sailor-321711/my-v-docker:v1']
 options:
  logging: NONE
  
