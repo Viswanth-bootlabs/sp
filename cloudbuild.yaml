@@ -6,4 +6,4 @@ steps:
 - name: 'asia.gcr.io/cloud-builders/docker'
   args: ['push', 'asia-south1-docker.pkg.dev/321711/my-v-docker-repo/myimage']
 options:
-  logging: NONE
+  logging: CLOUD_LOGGING_ONLY
