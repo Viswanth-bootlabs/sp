@@ -1,4 +1,3 @@
-
 steps:
 - name: 'asia.gcr.io/cloud-builders/docker'
   args: [ 'build', '-t', 'asia-south1-docker.pkg.dev/321711/my-v-docker-repo/myimage', '.' ]
@@ -6,4 +5,6 @@ steps:
 - name: 'asia.gcr.io/cloud-builders/docker'
   args: ['push', 'asia-south1-docker.pkg.dev/321711/my-v-docker-repo/myimage']
 options:
-  logging: NONE
+ logging: NONE
+ 
+
