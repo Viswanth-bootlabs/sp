@@ -24,3 +24,9 @@ jobs:
         run: mvn clean
       - name: maven build 
         run: mvn install
+      - name: Run a one-line script
+        run:
+         make build
+      - name: Run a one-line script
+        run:
+         make push
