@@ -12,6 +12,6 @@ steps:
 # - name: 'gcr.io/cloud-builders/docker'
 #   args: ['push', 'gcr.io/sailor-321711/test-image:v1']
 - name: 'gcr.io/cloud-builders/docker'
-  args: [ 'push', 'gcr.io-docker.pkg.dev/sailor-321711/testimage:v1']
+  args: [ 'push', 'gcr.io/sailor-321711/testimage:v1']
 options:
   logging: NONE
