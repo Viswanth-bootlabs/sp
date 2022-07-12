@@ -1,7 +1,8 @@
 
 steps:
-- name: 'asia.gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', 'gcr.io-docker.pkg.dev/sailor-321711/react-image/react-image:v1', '.' ]
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'build', '-t', 'gcr.io-docker.pkg.dev/sailor-321711/test-image/test-image:v1', '.' ]
+
 
 - name: 'asia.gcr.io/cloud-builders/docker'
   args: ['push', 'asia-south1-docker.pkg.dev/321711/my-v-docker-repo:myimage']
