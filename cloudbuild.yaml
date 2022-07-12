@@ -2,6 +2,8 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: [ 'build', '-t', 'gcr.io-docker.pkg.dev/sailor-321711/testimage/testimage:v1', '.' ]
+images:
+- 'gcr.io-docker.pkg.dev/sailor-321711/testimage/testimage:v1'
 # - name: 'gcr.io/cloud-builders/docker'
 #   args: [ 'tag', 'react-image', 'gcr.io/sailor-321711/react-image/react-image:v1' ]
 
@@ -11,7 +13,7 @@ steps:
 
 # - name: 'gcr.io/cloud-builders/docker'
 #   args: ['push', 'gcr.io/sailor-321711/test-image:v1']
-- name: 'gcr.io/cloud-builders/docker'
-  args: [ 'push', 'gcr.io/sailor-321711/testimage/testimage:v1']
+# - name: 'gcr.io/cloud-builders/docker'
+#   args: [ 'push', 'gcr.io/sailor-321711/testimage/testimage:v1']
 options:
   logging: NONE
