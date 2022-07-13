@@ -1,7 +1,7 @@
 
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t','gcr.io/sailor-321711/testing:$COMMIT_SHA','.']
+  args: [ 'build', '-t',' gcr.io/sailor-321711/testing:$COMMIT_SHA','.']
 # images:
 # - 'gcr.io-docker.pkg.dev/sailor-321711/testimage/testimage:v1'
 # - name: 'gcr.io/cloud-builders/docker'
