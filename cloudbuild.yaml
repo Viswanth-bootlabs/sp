@@ -19,9 +19,6 @@ steps:
   - 'gcr.io/sailor-321711/vi/testing:$COMMIT_SHA'
   - '--region'
   - 'us-central1'
-  - '--platform'
-  - 'managed'
-  - '--allow-unauthenticated'
 images:
   - 'gcr.io/sailor-321711/vi/testing:$COMMIT_SHA'
 # - name: 'gcr.io/cloud-builders/docker'
