@@ -17,7 +17,7 @@ steps:
 #   args: [ 'push', 'gcr.io-docker.pkg.dev/sailor-321711/viswanth-bootlabs/testing:$COMMIT_SHA']
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
-  args: ['run', 'deploy', 'cloud-run', '--image', 'gcr.io/sailor-321711/github.com/viswanth-bootlabs/testing@sha256:a53868558751bea97d34430b28c7ab42f26e5d9f39400baff4e508a685cf8b5e', '--region', 'asia-south1']
+  args: ['run', 'deploy', 'cloud-run', '--image', 'gcr.io/sailor-321711/github.com/viswanth-bootlabs/testing@sha256', '--region', 'asia-south1']
 
 options:
   logging: NONE
