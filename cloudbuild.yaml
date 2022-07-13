@@ -15,10 +15,10 @@ steps:
 #   args: ['push', 'gcr.io/sailor-321711/test-image:v1']
 # - name: 'gcr.io/cloud-builders/docker'
 #   args: [ 'push', 'gcr.io-docker.pkg.dev/sailor-321711/viswanth-bootlabs/testing:$COMMIT_SHA']
-- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-  entrypoint: gcloud
-  args: ['run', 'deploy', 'testing', '--image','gcr.io/sailor-321711/testing:$SHORT_SHA']
-images:
-- gcr.io/sailor-321711/github.com/viswanth-bootlabs/testing:$SHORT_SHA
+# - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+#   entrypoint: gcloud
+#   args: ['run', 'deploy', 'testing', '--image','gcr.io/sailor-321711/testing:$SHORT_SHA']
+# images:
+# - gcr.io/sailor-321711/github.com/viswanth-bootlabs/testing:$SHORT_SHA
 options:
   logging: NONE
