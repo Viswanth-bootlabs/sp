@@ -11,31 +11,18 @@ steps:
   args: [ 'push', 'gcr.io/sailor-321711/vi/testing:$COMMIT_SHA' ]
  
 - name: 'gcr.io/cloud-builders/gcloud'
-13
   args:
-14
   - 'run'
-15
   - 'deploy'
-16
   - 'cloudrunservice'
-17
   - '--image'
-18
   - 'gcr.io/sailor-321711/vi/testing:$COMMIT_SHA'
-19
   - '--region'
-20
   - 'us-central1'
-21
   - '--platform'
-22
   - 'managed'
-23
   - '--allow-unauthenticated'
-24
 images:
-25
   - 'gcr.io/sailor-321711/vi/testing:$COMMIT_SHA'
 # - name: 'gcr.io/cloud-builders/docker'
 #   args: ['push', 'gcr.io/sailor-321711/test-image:v1']
