@@ -14,7 +14,7 @@ steps:
   args:
   - 'run'
   - 'deploy'
-  - 'testing'
+  - 'testing123'
   - '--image'
   - 'gcr.io/sailor-321711/vi/testing:$COMMIT_SHA'
   - '--region'
