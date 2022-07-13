@@ -9,6 +9,8 @@ steps:
 
 - name: 'gcr.io/cloud-builders/docker'
   args: [ 'push', 'gcr.io/sailor-321711/vi/testing:$COMMIT_SHA' ]
+- name: 'bash'
+  args: ['echo', '$COMMIT_SHA']
  
 - name: 'gcr.io/cloud-builders/gcloud'
   args:
