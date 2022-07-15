@@ -22,8 +22,6 @@ steps:
   - 'gcr.io/sailor-321711/vi/testing:$COMMIT_SHA'
   - '--region'
   - 'us-central1'
-  - '--Container port'
-  - '80'
   - '--allow-unauthenticated'
 images:
   - 'gcr.io/sailor-321711/vi/testing:$COMMIT_SHA'
