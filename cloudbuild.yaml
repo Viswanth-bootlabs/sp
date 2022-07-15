@@ -12,7 +12,8 @@ steps:
 - name: 'bash'
   args: ['echo', '$COMMIT_SHA']
  
-- name: 'gcr.io/cloud-builders/gcloud'
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: gcloud
   args:
   - 'run'
   - 'deploy'
